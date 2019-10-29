@@ -1,0 +1,5 @@
+<h3>Project list:</h3>
+
+<div *ngFor="let project of projects| async">
+  <a [title]="project.name" [routerLink]="['projects', project.id]">{{project.name}}</a>
+</div>
